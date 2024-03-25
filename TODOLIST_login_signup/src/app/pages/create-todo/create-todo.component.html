@@ -1,0 +1,25 @@
+
+
+<div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name">
+  
+    <label for="description">Description:</label>
+    <input type="text" id="description" [(ngModel)]="description">
+  
+    <label for="startTime">Start Time:</label>
+    <input type="text" id="startTime" [(ngModel)]="startTime">
+  
+    <label for="endTime">End Time:</label>
+    <input type="text" id="endTime" [(ngModel)]="endTime">
+  
+    <label for="priority">Priority:</label>
+    <select id="priority" [(ngModel)]="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  
+    <button (click)="createTodo()">Create Todo</button>
+  </div>
+  

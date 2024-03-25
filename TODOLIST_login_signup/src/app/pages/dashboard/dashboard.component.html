@@ -1,1 +1,26 @@
-<p>dashboard works!</p>
+
+
+<div>
+    <h2>Todo List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Start Time</th>
+          <th>End Time</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let todo of todos">
+          <td>{{ todo.name }}</td>
+          <td>{{ todo.description }}</td>
+          <td>{{ todo.startTime }}</td>
+          <td>{{ todo.endTime }}</td>
+          <td>{{ todo.priority }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
